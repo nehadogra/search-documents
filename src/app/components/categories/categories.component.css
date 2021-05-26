@@ -1,0 +1,33 @@
+.categories {
+   color: #a6a6a6;
+}
+
+.selected-category {
+    font-weight: 700;
+    color: #000000;
+}
+
+.category-list {
+    flex-direction: column;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .category-list {
+        flex-direction: row;
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    .selected-category {
+        font-weight: 700;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+    }
+
+    .categories {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}

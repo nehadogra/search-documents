@@ -1,0 +1,32 @@
+.document {
+    border-radius: 10px;
+    height: 130px;
+    background-color: #ffffff;
+}
+
+.technical {
+    background-color: #e7dfed;
+}
+
+.financial {
+    background-color: #e5eade;
+}
+
+.marketing {
+    background-color: #eae4de;
+}
+
+.human {
+    background-color: #dae6e5;
+}
+
+.doc-badge {
+    padding: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.name {
+    font-weight: 700;
+}

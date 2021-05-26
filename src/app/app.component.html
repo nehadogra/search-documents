@@ -1,0 +1,15 @@
+<div class="container-fluid main px-4">
+  <div class="my-4">
+    <h3>Documents</h3>
+    <h5>Search document or select category</h5>
+  </div>
+  <div class="row pt-4 px-4">
+    <div class="category-section">
+      <app-categories (filterDoc)="filterDoc($event)"></app-categories>
+    </div>
+    <div class="document-section">
+      <app-documents [filterByTerm]="filterByTerm">
+      </app-documents>
+    </div>
+  </div>
+</div>

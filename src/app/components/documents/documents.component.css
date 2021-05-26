@@ -1,0 +1,18 @@
+.search {
+    border-radius: 10px;
+    color: #a6a6a6;
+}
+
+.search:focus-visible {
+    outline: none;
+}
+
+.document-tile {
+    width: 25%;
+}
+
+@media screen and (max-width: 720px) {
+    .document-tile {
+        width: 100%;
+    }
+}

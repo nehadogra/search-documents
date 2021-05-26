@@ -1,0 +1,12 @@
+<input type="text" class="w-100 mb-4 border search p-2" placeholder="Start typing document name..."
+    [(ngModel)]="searchTerm" (input)="searchDoc()">
+<br>
+<div class="row">
+    <ng-container *ngIf="documentsData.length > 0 else noDocument">
+        <app-document-tile class="document-tile p-0" *ngFor='let document of documentsData' [data]='document'>
+        </app-document-tile>
+    </ng-container>
+    <ng-template #noDocument>
+        <p class="text-center">No Document available</p>
+    </ng-template>
+</div>

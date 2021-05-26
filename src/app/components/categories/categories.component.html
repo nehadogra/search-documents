@@ -1,0 +1,6 @@
+<ul class="nav category-list">
+    <li class="nav-item m-1 categories" [ngClass]="{'selected-category': (category === selectedCategory)}"
+        *ngFor="let category of categories; let i = index" (click)="filterDocuments(category)">
+        {{category}}
+    </li>
+</ul>
